@@ -14,7 +14,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight=".5"
             android:background="#FF5a5555"
             android:weightSum="1">
 
@@ -37,7 +37,8 @@
                     android:layout_height="match_parent"
                     android:id="@+id/timeClock"
                     android:textSize="50dp"
-                    android:fontFamily="courier" />
+                    android:fontFamily="courier"
+                    android:textColor="#FF03FF1C" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -58,8 +59,8 @@
 
                 <Space
                     android:layout_width="553dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.01" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06" />
 
                 <TextView
                     android:layout_width="62dp"
@@ -67,12 +68,14 @@
                     android:text="AM"
                     android:id="@+id/amInd"
                     android:textSize="30dp"
-                    android:textIsSelectable="false" />
+                    android:textIsSelectable="false"
+                    android:textColor="#FF03FF1C"
+                    android:fontFamily="courier" />
 
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight=".05" />
+                    android:layout_weight="0.01" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -80,7 +83,9 @@
                     android:text="FM"
                     android:id="@+id/fmInd"
                     android:textSize="30dp"
-                    android:layout_weight=".056" />
+                    android:layout_weight=".056"
+                    android:textColor="#FF03FF1C"
+                    android:fontFamily="courier" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,7 +118,8 @@
                     android:id="@+id/textView"
                     android:textSize="50dp"
                     android:phoneNumber="false"
-                    android:fontFamily="courier" />
+                    android:fontFamily="courier"
+                    android:textColor="#FF03FF1C" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -123,7 +129,6 @@
                 <Switch
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New Switch"
                     android:id="@+id/switch1"
                     android:layout_weight=".11" />
 
@@ -201,7 +206,9 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Volume"
                     android:id="@+id/volInd"
-                    android:textSize="25dp" />
+                    android:textSize="25dp"
+                    android:textColor="#FF03FF1C"
+                    android:fontFamily="courier" />
 
                 <Space
                     android:layout_width="20px"
@@ -213,23 +220,139 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="23"
                     android:id="@+id/volVal"
-                    android:textSize="25dp" />
+                    android:textSize="25dp"
+                    android:textColor="#FF03FF1C"
+                    android:textIsSelectable="false"
+                    android:fontFamily="courier" />
 
                 <Space
                     android:layout_width="20px"
                     android:layout_height="20px"
-                    android:id="@+id/" />
+                    android:id="@+id/space" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FF000000"
             android:baselineAligned="false"
-            android:layout_weight="1"></LinearLayout>
+            android:layout_weight="0.19">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="CD Trat-tor"
+                    android:id="@+id/cdTray"
+                    android:textSize="30dp"
+                    android:textColor="#FF000000"
+                    android:background="#FFDAC55A"
+                    android:layout_weight=".1" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".05" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="225dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/pauseButton"
+                    android:text="Pause" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/stopButton"
+                    android:text="Stop" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nextButton"
+                    android:text="Next" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ejectButton"
+                    android:text="Eject" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/repeatButton"
+                    android:text="repeat" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="906dp"
+                android:layout_height="55dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/toggleButton" />
+
+                <Space
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Volume Control  "
+                    android:id="@+id/volInd2"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="25dp"
+                    android:fontFamily="courier" />
+
+                <SeekBar
+                    android:layout_width="371dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar2"
+                    android:background="#FF5A5748" />
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
